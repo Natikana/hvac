@@ -1,0 +1,14 @@
+@import '@/styles/scss/mixin';
+.cart {
+  @include display(flex, column, center, center, unset);
+  max-width: 350px;
+  flex-grow: 1;
+  width: 320px;
+  .cartTitle {
+    @include text(var(--font-weight-medium), var(--font-size-m), 'Roboto', var(--color-light-300));
+  }
+  .subTitle {
+    text-align: center;
+    padding: 0 30px;
+  }
+}

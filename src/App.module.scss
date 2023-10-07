@@ -1,0 +1,7 @@
+@import '@/styles/scss/mixin';
+
+.app {
+  @include display(flex, column, self-start, center, normal);
+  width: 100%;
+  height: 100vh;
+}

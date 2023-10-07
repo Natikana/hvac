@@ -1,0 +1,18 @@
+@import '@/styles/scss/mixin';
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  .headerBlock {
+    @include display(flex, row, space-between, center, normal);
+    height: 100px;
+    padding: 0 175px;
+    background-color: var(--color-light-000);
+    .logo {
+      @include text(800, 34px, 'Roboto', var(--color-dark-100));
+    }
+  }
+}

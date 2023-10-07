@@ -1,5 +1,19 @@
-
 module.exports = {
-  extends: '@it-incubator/eslint-config',
-  rules: { 'no-console': ['warn', { allow: ['warn', 'error'] }] },
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+    }
 }

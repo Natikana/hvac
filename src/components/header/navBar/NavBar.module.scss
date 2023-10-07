@@ -1,0 +1,14 @@
+@import '../../../styles/scss/mixin';
+@import '@/styles/_colors.scss';
+
+.navBar {
+  @include display(flex, row, space-around, center, 40px);
+  a {
+    @include text(400, 16px, 'Roboto', var(--color-light-300));
+    line-height: 26px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--color-dark-100);
+  }
+}

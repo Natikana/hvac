@@ -1,0 +1,9 @@
+@import '@/styles/scss/mixin';
+.choice {
+  background-color: var(--color-light-500);
+  .choiceBlock {
+    @include display(flex, row, space-around, center, 15px);
+    flex-wrap: wrap;
+    margin: 50px 0;
+  }
+}

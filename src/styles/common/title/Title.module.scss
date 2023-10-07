@@ -1,0 +1,23 @@
+@import '@/styles/scss/mixin';
+
+.titleBlock {
+  .title {
+    @include text(var(--font-weight-light), var(--font-size-xxl), 'Roboto', var(--color-light-300));
+    text-align: center;
+  }
+  .title::after {
+    content: '';
+    background: var(--color-dark-100);
+    width: 80px;
+    height: 2px;
+    display: block;
+    margin: 20px auto 0;
+  }
+  .subTitle {
+    @include text(var(--font-weight-thin), var(--font-size-xl), 'Roboto', var(--color-light-300));
+    text-align: center;
+  }
+  p {
+    margin-top: 10px;
+  }
+}

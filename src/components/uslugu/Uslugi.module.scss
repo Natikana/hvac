@@ -1,0 +1,8 @@
+@import '@/styles/scss/mixin';
+.service {
+  .serviceBlock {
+    @include display(flex, row, space-between, center, unset);
+    flex-wrap: wrap;
+    margin: 50px 0;
+  }
+}
