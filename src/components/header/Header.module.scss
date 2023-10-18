@@ -5,14 +5,37 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 100;
+  max-height: 100px;
+  transition: background-color 0.4s ease-out;
+  overflow: hidden;
+
   .headerBlock {
     @include display(flex, row, space-between, center, normal);
-    height: 100px;
     padding: 0 175px;
-    background-color: var(--color-light-000);
-    .logo {
-      @include text(800, 34px, 'Roboto', var(--color-dark-100));
+    .contacts {
+      @include display(flex, row, normal, normal, normal);
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      .contact {
+        @include display(flex, row, normal, center, 10px);
+        a {
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+      .text {
+        @include text(500, 13px, 'Roboto', var(--color-light-300), unset);
+      }
+      .logo {
+        @include text(800, 34px, 'Roboto', var(--color-dark-100), unset);
+      }
     }
   }
+}
+.headerColour {
+  background-color: var(--color-light-500);
 }

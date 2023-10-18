@@ -6,9 +6,10 @@
   gap: $gap;
 }
 
-@mixin text($fontWeight, $fontSize, $fontFamily, $colorOfText) {
+@mixin text($fontWeight, $fontSize, $fontFamily, $colorOfText, $lineHeightFamily) {
   font-weight: $fontWeight;
   font-size: $fontSize;
   font-family: $fontFamily;
   color: $colorOfText;
+  line-height: $lineHeightFamily;
 }

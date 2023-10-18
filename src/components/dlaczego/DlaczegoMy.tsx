@@ -5,9 +5,7 @@ import chat from '../../../access/img/choice/job-interview.png'
 import tools from '../../../access/img/choice/tool.png'
 import car from '../../../access/img/choice/car-repair.png'
 import common from '../../styles/common/commonSection.module.scss'
-{
-  /*["This is ", <strong>not</strong>,  "working."]*/
-}
+
 export const DlaczegoMy = () => {
   return (
     <section className={` ${common.section} ${scss.choice} `}>

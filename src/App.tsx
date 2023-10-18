@@ -1,6 +1,6 @@
 import { Header } from '@/components/header/Header.tsx'
 import { Home } from '@/components/home/Home.tsx'
-//import { Kontakt } from '@/components/kontakt/Kontakt.tsx'
+import { Kontakt } from '@/components/kontakt/Kontakt.tsx'
 import { Realizacji } from '@/components/realizacji/Realizacji.tsx'
 import { Referencji } from '@/components/referencji/Referencji.tsx'
 import { Uslugi } from '@/components/uslugu/Uslugi.tsx'
@@ -17,8 +17,7 @@ export function App() {
       <Uslugi />
       <Realizacji />
       <Referencji />
-
-      {/*<Kontakt />*/}
+      <Kontakt />
     </div>
   )
 }

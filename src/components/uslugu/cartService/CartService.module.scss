@@ -4,6 +4,7 @@
   max-width: 400px;
   width: 350px;
   flex-shrink: 1;
+  margin-bottom: 100px;
   .titleBlock {
     @include display(flex, row, space-around, flex-start, 15px);
     padding: 15px 25px;
@@ -22,7 +23,8 @@
           var(--font-weight-medium),
           var(--font-size-l),
           'Roboto',
-          var(--color-light-300)
+          var(--color-light-300),
+          unset
         );
       }
       .subTitle {
@@ -30,7 +32,8 @@
           var(--font-weight-regular),
           var(--font-size-s),
           'Roboto',
-          var(--color-light-300)
+          var(--color-light-300),
+          unset
         );
       }
     }

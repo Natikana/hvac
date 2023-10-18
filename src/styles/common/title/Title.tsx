@@ -8,8 +8,8 @@ type PropsType = {
 }
 export const Title: FC<PropsType> = ({ title, className, subTitle }) => {
   return (
-    <div className={scss.titleBlock}>
-      <h2 className={`${scss.title} ${className}`}>{title}</h2>
+    <div className={`${scss.titleBlock} ${className}`}>
+      <h2 className={scss.title}>{title}</h2>
       <h3 className={scss.subTitle}>{subTitle}</h3>
     </div>
   )

@@ -5,7 +5,8 @@
 .subHeader {
   @include display(flex, row, self-start, center, normal);
   height: 50px;
-  background-color: var(--color-light-500);
+  //background-color: var(--color-light-500);
+  background-color: transparent;
   padding: 0 175px;
   .contacts {
     @include display(flex, row, normal, normal, normal);
@@ -27,7 +28,7 @@
       }
     }
     .text {
-      @include text(500, 13px, 'Roboto', var(--color-light-300));
+      @include text(500, 13px, 'Roboto', var(--color-light-300), unset);
     }
   }
 }

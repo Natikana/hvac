@@ -2,9 +2,9 @@
 @import '@/styles/_colors.scss';
 
 .navBar {
-  @include display(flex, row, space-around, center, 40px);
+  @include display(flex, row, space-around, center, 26px);
   a {
-    @include text(400, 16px, 'Roboto', var(--color-light-300));
+    @include text(400, 16px, 'Roboto', var(--color-light-300), unset);
     line-height: 26px;
     text-decoration: none;
   }

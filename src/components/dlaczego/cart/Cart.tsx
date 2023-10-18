@@ -11,8 +11,7 @@ export const Cart: FC<PropsType> = ({ title, subTitle, image }) => {
   return (
     <div className={scss.cart}>
       <img src={image} alt={'chat'} />
-      <Title title={title} className={scss.cartTitle} />
-      <span className={scss.subTitle}>{subTitle}</span>
+      <Title title={title} className={scss.cartBlock} subTitle={subTitle} />
     </div>
   )
 }
