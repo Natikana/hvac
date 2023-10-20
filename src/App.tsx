@@ -46,15 +46,6 @@ export function App() {
     <div className={scss.app}>
       <Header />
       <AllPages />
-      {/*
-      <Routes>
-        <Route path={'/hvac/home'} element={<Home />} />
-        <Route path={'/hvac/whyWe'} element={<DlaczegoMy />} />
-        <Route path={'/hvac/offer'} element={<Service />} />
-        <Route path={'/hvac/projects'} element={<Projects />} />
-        <Route path={'/hvac/reference'} element={<Reference />} />
-        <Route path={'/hvac/contact'} element={<Contact />} />
-      </Routes>*/}
     </div>
   )
 }

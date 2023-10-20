@@ -1,8 +1,7 @@
 @import '@/styles/scss/mixin';
 .cartService {
-  //position: relative;
-  max-width: 400px;
-  width: 350px;
+  max-width: 420px;
+  width: 370px;
   flex-shrink: 1;
   margin-bottom: 50px;
   .titleBlock {
@@ -38,6 +37,9 @@
         );
       }
     }
+    @media screen and (max-width: 1089px) {
+      width: unset;
+    }
   }
   .titleBlock:after {
     content: '';
@@ -47,5 +49,17 @@
     height: 120%;
     background-color: var(--color-dark-300);
     z-index: 1;
+    @media screen and (max-width: 1089px) {
+      top: -20px;
+    }
+  }
+  img {
+    @media screen and (max-width: 1089px) {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 1089px) {
+    width: 100%;
+    max-width: unset;
   }
 }

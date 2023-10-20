@@ -3,7 +3,7 @@
   .serviceBlock {
     @include display(flex, row, space-between, start, unset);
     flex-wrap: wrap;
-    @media screen and (max-width: 1004px) {
+    @media screen and (max-width: 1089px) {
       justify-content: center;
     }
   }
