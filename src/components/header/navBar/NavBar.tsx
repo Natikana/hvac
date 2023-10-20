@@ -1,4 +1,5 @@
 import scss from './NavBar.module.scss'
+import { Link } from 'react-router-dom'
 type LinkType = {
   title: string
   href: string
@@ -17,9 +18,9 @@ export const NavBar = () => {
     <nav className={scss.navBar}>
       {links.map((link, index) => {
         return (
-          <a href={`/#${link.href}`} key={index}>
+          <Link to={{ pathname: `hvac/${link.href}`, hash: link.href }} key={index}>
             {link.title}
-          </a>
+          </Link>
         )
       })}
     </nav>

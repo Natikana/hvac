@@ -19,6 +19,7 @@ import { v1 } from 'uuid'
 import img2 from '../../../access/img/service/airCond (2).jpg'
 import img3 from '../../../access/img/ourWork/1 (3).jpg'
 import img4 from '../../../access/img/ourWork/1 (4).jpg'
+import { useState } from 'react'
 
 export const Reference = () => {
   const swiperArr: { image: string; id: string }[] = [
@@ -33,7 +34,7 @@ export const Reference = () => {
     { image: coldPare, id: v1() },
     { image: yellowPare, id: v1() },
   ]
-
+  const [noneDisplay, setNoneDisplay] = useState(false)
   return (
     <section id={'reference'} className={` ${common.section} ${scss.refer} `}>
       <Title
@@ -81,7 +82,7 @@ export const Reference = () => {
         </Swiper>
 
         <Swiper
-          className={scss.swiper}
+          className={!noneDisplay ? `${scss.swiperNone}` : `${scss.swiper}`}
           slidesPerView={1}
           autoHeight={false}
           navigation={false}

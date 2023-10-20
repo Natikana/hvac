@@ -16,6 +16,16 @@ export const Contact = () => {
           ]}
         />
         <div className={scss.contactBlock}>
+          <iframe
+            src="https://maps-api-ssl.google.com/maps?hl=en-US&ll=52.270488,21.054492&output=embed&q=Go%C5%82awicka,+03-550+Warszawa,+Polska+(Go%C5%82awicka)&z=16"
+            width={'70%'}
+            height={400}
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            aria-hidden="false"
+            tabIndex={0}
+            title="ARTiK Yauheni Mashkouski"
+          />
           <div className={scss.contactDate}>
             <h3>ARTiK Yauheni Mashkouski</h3>
             <ul className={scss.contacts}>
@@ -49,16 +59,6 @@ export const Contact = () => {
               ciesz się doskonałym klimatem przez cały rok!
             </span>
           </div>
-          <iframe
-            src="https://maps-api-ssl.google.com/maps?hl=en-US&ll=52.270488,21.054492&output=embed&q=Go%C5%82awicka,+03-550+Warszawa,+Polska+(Go%C5%82awicka)&z=16"
-            width={'50%'}
-            height={400}
-            style={{ border: 0 }}
-            allowFullScreen={true}
-            aria-hidden="false"
-            tabIndex={0}
-            title="ARTiK Yauheni Mashkouski"
-          />
         </div>
       </div>
     </section>

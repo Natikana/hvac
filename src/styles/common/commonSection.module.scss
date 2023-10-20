@@ -1,4 +1,8 @@
 .section {
   width: 100%;
   padding: 100px 175px;
+  @media screen and (max-width: 768px) {
+    padding: 50px;
+    justify-content: center;
+  }
 }
