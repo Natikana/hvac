@@ -6,7 +6,7 @@ import 'swiper/scss/navigation'
 
 import { Navigation, Autoplay } from 'swiper/modules'
 import common from '@/styles/common/commonSection.module.scss'
-import scss from './Referencji.module.scss'
+import scss from './Reference.module.scss'
 import { Title } from '@/styles/common/title/Title.tsx'
 
 import joyPare from '../../../access/img/refer/joyPare.jpg'
@@ -20,7 +20,7 @@ import img2 from '../../../access/img/service/airCond (2).jpg'
 import img3 from '../../../access/img/ourWork/1 (3).jpg'
 import img4 from '../../../access/img/ourWork/1 (4).jpg'
 
-export const Referencji = () => {
+export const Reference = () => {
   const swiperArr: { image: string; id: string }[] = [
     { image: img1, id: v1() },
     { image: img2, id: v1() },
@@ -37,10 +37,10 @@ export const Referencji = () => {
   return (
     <section className={` ${common.section} ${scss.refer} `}>
       <Title
-        title={'Nasze Referencje'}
+        title={'Referencje'}
         subTitle={[
-          'We offer a full range of garage services to vehicle owners located in Tucson area.  ',
-          <p>Our professinals know how to handle a wide range of car services</p>,
+          'Nasza reputacja i sukcesy opierają się na zadowoleniu Naszych Klientów.  ',
+          <p>Oto, co Nasi Partnerzy mówią o współpracy z Nami</p>,
         ]}
       />
       <div className={scss.referBlock}>

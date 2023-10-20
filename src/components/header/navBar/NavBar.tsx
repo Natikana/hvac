@@ -8,18 +8,17 @@ type LinkType = {
 export const NavBar = () => {
   const links: LinkType[] = [
     { title: 'Home', href: 'home' },
-    /*{ title: 'O Nas', href: 'oNas' },*/
-    { title: 'Dlaczego My', href: 'dlaczego' },
-    { title: 'Usługi', href: 'uslugi' },
-    { title: 'Realizacji', href: 'realizacji' },
-    { title: 'Referencji', href: 'referencji' },
-    { title: 'Kontakt', href: 'kontakt' },
+    { title: 'Dlaczego My', href: 'whyWe' },
+    { title: 'Oferta', href: 'offer' },
+    { title: 'Projekty', href: 'projects' },
+    { title: 'Referencje', href: 'reference' },
+    { title: 'Kontakt', href: 'contact' },
   ]
   return (
     <nav className={scss.navBar}>
       {links.map((link, index) => {
         return (
-          <Link to={link.href} key={index} className={scss.text}>
+          <Link to={link.href} key={index}>
             {link.title}
           </Link>
         )

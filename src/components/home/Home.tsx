@@ -14,8 +14,9 @@ export const Home = () => {
     backgroundPosition: 'center center',
   }
   //<a href="tel:48 574 107 642" className={scss.text}>
+  //style={{color:'#EACF78'}}
   return (
-    <section className={scss.homeSection}>
+    <section id={'home'} className={scss.homeSection}>
       {/* <div style={{ height: '130px' }}></div>*/}
       <div className={scss.homeImg} style={imageStyle}>
         <div className={scss.titleBlock}>
@@ -23,8 +24,24 @@ export const Home = () => {
             Call us:
             <h2 style={{ fontSize: '20px' }}>(48) 574 107 642</h2>
           </span>*/}
-          <h1 className={scss.title}>Zapewniamy Komfort w Domu</h1>
-          <h3 className={scss.subTitle}>Zajmuje się Klimatyzacja i Wentylacja</h3>
+          {/*<h1 className={scss.title}>Zapewniamy Komfort w Domu</h1>*/}
+
+          <h1 className={scss.title}>Twój Komfort, Nasza Pasja!</h1>
+          <h3 className={scss.subTitle}>
+            Witaj w Serwisie ARTiK - Twoim Partnerem w Klimatyzacji i Wentylacji
+          </h3>
+          {/*<h5>
+            <b style={{ color: 'var(--color-dark-100)' }}>Jesteśmy ekspertami</b> w dziedzinie{' '}
+            <b style={{ color: 'var(--color-dark-100)' }}>klimatyzacji, pomp ciepła i wentylacji</b>
+            .
+            <br />
+            Nasza firma
+            <b style={{ color: 'var(--color-dark-100)' }}>oferuje kompleksowe rozwiązania</b>, które
+            sprawią, <br />
+            że <b style={{ color: 'var(--color-dark-100)' }}>Twój dom lub firma</b> będą
+            <b style={{ color: 'var(--color-dark-100)' }}> zawsze komfortowe</b>, niezależnie od
+            warunków atmosferycznych
+          </h5>*/}
           <a href="tel:48 574 107 642" className={scss.btn}>
             Zadzwoń do Nas
           </a>

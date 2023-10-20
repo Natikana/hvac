@@ -29,6 +29,9 @@
           @include text(400, 16px, 'Roboto', var(--color-light-300), 24px);
         }
       }
+      span {
+        @include text(400, 16px, 'Roboto', var(--color-dark-100), 24px);
+      }
     }
   }
 }

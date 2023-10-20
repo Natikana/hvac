@@ -1,4 +1,4 @@
-import scss from './Uslugi.module.scss'
+import scss from './Service.module.scss'
 import { Title } from '@/styles/common/title/Title.tsx'
 import { CartService } from '@/components/uslugu/cartService/CartService.tsx'
 import common from '@/styles/common/commonSection.module.scss'
@@ -8,14 +8,19 @@ import heart from '../../../access/img/service/heart.jpg'
 import acIcon from '../../../access/img/service/ac.png'
 import ventIcon from '../../../access/img/service/ventilation.png'
 import heat from '../../../access/img/service/heat.png'
-export const Uslugi = () => {
+export const Service = () => {
   return (
-    <section className={` ${common.section} ${scss.service} `}>
+    <section id={'offer'} className={` ${common.section} ${scss.service} `}>
       <Title
-        title={'Co Robimy'}
+        title={'Oferta'}
         subTitle={[
-          'We offer a full range of garage services to vehicle owners located in Tucson area.  ',
-          <p>Our professinals know how to handle a wide range of car services</p>,
+          <>
+            Nasza firma oferuje kompleksowe rozwiązania, które sprawią,
+            <p>
+              że Twój dom lub firma będą zawsze komfortowe, niezależnie od warunków atmosferycznych
+            </p>
+            ,
+          </>,
         ]}
       />
       <div className={scss.serviceBlock}>
@@ -23,19 +28,25 @@ export const Uslugi = () => {
           icon={acIcon}
           title={'Klimatyzacja'}
           image={airCond}
-          subtitle={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}
+          subtitle={
+            'Dostarczamy i montujemy najnowocześniejsze systemy klimatyzacji, które zapewniają optymalny komfort w każdym pomieszczeniu'
+          }
         />
         <CartService
           icon={ventIcon}
-          title={'Ventylacja'}
+          title={'Wentylacja'}
           image={vent}
-          subtitle={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}
+          subtitle={
+            'Nasze systemy wentylacyjne zapewnią świeże powietrze i zdrowe warunki wewnętrzne'
+          }
         />
         <CartService
           icon={heat}
-          title={'Instalacja grzewcza'}
+          title={'Pompy Ciepła'}
           image={heart}
-          subtitle={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}
+          subtitle={
+            'Oferujemy energooszczędne pompy ciepła, które pomogą Ci obniżyć koszty ogrzewania i chłodzenia'
+          }
         />
       </div>
     </section>

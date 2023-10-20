@@ -1,12 +1,20 @@
 import common from '@/styles/common/commonSection.module.scss'
-import scss from './Kontakt.module.scss'
+import scss from './Contact.module.scss'
 import { Title } from '@/styles/common/title/Title.tsx'
 
-export const Kontakt = () => {
+export const Contact = () => {
   return (
-    <section className={` ${common.section} ${scss.sectionContact} `}>
+    <section id={'contact'} className={` ${common.section} ${scss.sectionContact} `}>
       <div>
-        <Title title={'Kontakt'} subTitle={'We would be happy to answer your questions.'} />
+        <Title
+          title={'Kontakt'}
+          subTitle={[
+            <>
+              Skontaktuj się z nami już dziś, aby dowiedzieć się więcej
+              <p>o naszych usługach i znaleźć najlepsze rozwiązanie dla swoich potrzeb</p>
+            </>,
+          ]}
+        />
         <div className={scss.contactBlock}>
           <div className={scss.contactDate}>
             <h3>ARTiK Yauheni Mashkouski</h3>
@@ -25,7 +33,7 @@ export const Kontakt = () => {
               </li>
               <li className={scss.contact}>
                 <i className="fa fa-hourglass" />
-                <span className={scss.text}>Mon - Sat 8.00 - 18.00. Sunday CLOSED</span>
+                <span className={scss.text}>Pn - Sob 8.00 - 19.00. Niedziela: Zamknięte</span>
               </li>
               <li className={scss.contact}>
                 <i className="fa fa-address-card" />
@@ -36,9 +44,13 @@ export const Kontakt = () => {
                 <span className={scss.text}>NIP: 5242878677</span>
               </li>
             </ul>
+            <span>
+              Niech <b>Twój komfort</b> nie zależy od warunków pogodowych. Wybierz <b>ARTiK</b> i
+              ciesz się doskonałym klimatem przez cały rok!
+            </span>
           </div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1222073449103!2d106.77590781537452!3d-6.2476228629146675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f11b12c11ab7%3A0xcd48f5c775249316!2sHumanity%20First%20Indonesia!5e0!3m2!1sid!2sid!4v1605684563677!5m2!1sid!2sid"
+            src="https://maps-api-ssl.google.com/maps?hl=en-US&ll=52.270488,21.054492&output=embed&q=Go%C5%82awicka,+03-550+Warszawa,+Polska+(Go%C5%82awicka)&z=16"
             width={'50%'}
             height={400}
             style={{ border: 0 }}

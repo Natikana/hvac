@@ -20,9 +20,13 @@
     .subTitle {
       @include text(400, 18px, 'Roboto', var(--color-light-100), 150%);
     }
+    h5 {
+      @include text(300, 16px, 'Roboto', var(--color-light-100), 150%);
+    }
     h1,
     h2,
-    h3 {
+    h3,
+    h5 {
       margin: 0;
     }
     .btn {

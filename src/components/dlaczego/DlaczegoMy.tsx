@@ -10,31 +10,40 @@ export const DlaczegoMy = () => {
   return (
     <section className={` ${common.section} ${scss.choice} `}>
       <Title
-        title={'Dlaczego My'}
+        title={'Dlaczego Warto Wybrać ARTiK?'}
         subTitle={[
-          'We offer a full range of garage services to vehicle owners located in Tucson area.  ',
-          <p>Our professinals know how to handle a wide range of car services</p>,
+          <>
+            Jesteśmy ekspertami w dziedzinie klimatyzacji, pomp ciepła i wentylacji.
+            {/* <p>Nasza firma oferuje kompleksowe rozwiązania, które sprawią,</p>
+            <p>
+              że Twój dom lub firma będą zawsze komfortowe, niezależnie od warunków atmosferycznych.
+            </p>*/}
+          </>,
         ]}
       />
       <div className={scss.choiceBlock}>
         <Cart
           image={chat}
-          title={'KAŻDA PRACA JEST OSOBISTA'}
+          title={'Wsparcie Klienta'}
           subTitle={
-            'Jeśli szukasz jakości, której możesz się spodziewać, ' +
-            'ale z bardziej osobistą i przyjazną atmosferą, właśnie ją znalazłeś'
+            'Nasza przyjazna obsługa klienta jest dostępna, ' +
+            'aby odpowiedzieć na Twoje pytania i rozwiązać ewentualne problemy'
+          }
+        />
+        <Cart
+          image={car}
+          title={'Profesjonalny Montaż'}
+          subTitle={
+            'Nasza ekipa montażowa to specjaliści z wieloletnim doświadczeniem, ' +
+            'którzy zadba o prawidłowy montaż Twojego systemu'
           }
         />
         <Cart
           image={tools}
-          title={'NAJLEPSZE MATERIAŁY'}
-          subTitle={'Zainwestowaliśmy we wszystkie najnowocześniejsze narzędzia specjalistyczne'}
-        />
-        <Cart
-          image={car}
-          title={'PROFESSIONAL STANDARDS'}
+          title={'Serwis i Konserwacja'}
           subTitle={
-            'Wykonujemy tylko tę pracę, która jest konieczna do rozwiązania Twojego problemu.'
+            ' Oferujemy kompleksową obsługę, w tym regularny serwis i konserwację, ' +
+            'aby Twój sprzęt działał bez zarzutu przez lata'
           }
         />
       </div>
