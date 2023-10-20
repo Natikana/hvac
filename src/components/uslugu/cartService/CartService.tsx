@@ -1,9 +1,9 @@
 import scss from './CartService.module.scss'
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 
 type PropsType = {
   title: string
-  subtitle: string
+  subtitle: ReactNode
   image: string
   icon: string
 }

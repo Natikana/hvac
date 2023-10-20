@@ -8,7 +8,7 @@ import common from '../../styles/common/commonSection.module.scss'
 
 export const DlaczegoMy = () => {
   return (
-    <section className={` ${common.section} ${scss.choice} `}>
+    <section id={'whyWe'} className={` ${common.section} ${scss.choice} `}>
       <Title
         title={'Dlaczego Warto Wybrać ARTiK?'}
         subTitle={[

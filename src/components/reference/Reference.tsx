@@ -35,7 +35,7 @@ export const Reference = () => {
   ]
 
   return (
-    <section className={` ${common.section} ${scss.refer} `}>
+    <section id={'reference'} className={` ${common.section} ${scss.refer} `}>
       <Title
         title={'Referencje'}
         subTitle={[

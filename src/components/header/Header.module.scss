@@ -32,6 +32,7 @@
       }
       .logo {
         @include text(800, 34px, 'Roboto', var(--color-dark-100), unset);
+        padding: 25px 0;
       }
     }
   }

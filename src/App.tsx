@@ -12,7 +12,6 @@ export function App() {
     <div className={scss.app}>
       <Header />
       <Home />
-      {/* <Onas />*/}
       <DlaczegoMy />
       <Service />
       <Projects />

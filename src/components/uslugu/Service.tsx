@@ -34,18 +34,18 @@ export const Service = () => {
         />
         <CartService
           icon={ventIcon}
-          title={'Wentylacja'}
+          title={'Wentylacja i Chłodnictwo'}
           image={vent}
           subtitle={
-            'Nasze systemy wentylacyjne zapewnią świeże powietrze i zdrowe warunki wewnętrzne'
+            'Oferujemy kompleksowe rozwiązania w zakresie wentylacji i chłodnictwa, aby zadbać o jakość powietrza i odpowiednią temperaturę w Twoim domu lub firmie'
           }
         />
         <CartService
           icon={heat}
-          title={'Pompy Ciepła'}
+          title={'Pompy Ciepła i Hydraulika'}
           image={heart}
           subtitle={
-            'Oferujemy energooszczędne pompy ciepła, które pomogą Ci obniżyć koszty ogrzewania i chłodzenia'
+            'Oferujemy energooszczędne pompy ciepła oraz dostosowane rozwiązania w dziedzinie instalacji wodno-kanalizacyjnych'
           }
         />
       </div>

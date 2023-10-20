@@ -6,7 +6,7 @@ import { Carousel } from '@/components/realizacji/carousel/Carousel.tsx'
 //         <>Twoja realizacja może być następna!
 export const Projects = () => {
   return (
-    <section className={` ${common.section} ${scss.projects} `}>
+    <section id={'projects'} className={` ${common.section} ${scss.projects} `}>
       <Title
         title={'Projekty'}
         subTitle={[
