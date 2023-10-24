@@ -10,7 +10,7 @@ export const DlaczegoMy = () => {
   return (
     <section id={'whyWe'} className={` ${common.section} ${scss.choice} `}>
       <Title
-        title={'Dlaczego Warto Wybrać ARTiK?'}
+        title={'Dlaczego ARTiK?'}
         subTitle={[
           <>
             Jesteśmy ekspertami w dziedzinie klimatyzacji, pomp ciepła i wentylacji.

@@ -4,7 +4,7 @@ export const Home = () => {
   let imageStyle = {
     display: 'flex',
     justifyContent: 'center',
-    width: '100%',
+    //width: '100%',
     height: '100vh',
     backgroundImage: `url("${main}")`,
     backgroundSize: 'cover',
@@ -18,7 +18,7 @@ export const Home = () => {
   return (
     <section id={'home'} className={scss.homeSection}>
       {/* <div style={{ height: '130px' }}></div>*/}
-      <div className={scss.homeImg} style={imageStyle}>
+      <div style={imageStyle}>
         <div className={scss.titleBlock}>
           {/* <span className={scss.subTitle}>
             Call us:

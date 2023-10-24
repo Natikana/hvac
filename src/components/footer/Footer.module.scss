@@ -1,9 +1,12 @@
 @import '@/styles/scss/mixin';
 .footer {
-  padding: 20px 0;
+  padding: 20px 175px;
   .footerBlock {
     .creator {
       @include text(300, 16px, 'Roboto', var(--color-light-100), unset);
     }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 20px 50px;
   }
 }
