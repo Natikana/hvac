@@ -7,8 +7,9 @@ type LinkType = {
 }
 type PropsType = {
   className?: string
+  onHandlerClose?: () => void
 }
-export const NavBar: FC<PropsType> = ({ className }) => {
+export const NavBar: FC<PropsType> = ({ className, onHandlerClose }) => {
   const links: LinkType[] = [
     { title: 'Home', href: 'home' },
     { title: 'Dlaczego My', href: 'whyWe' },
@@ -18,7 +19,7 @@ export const NavBar: FC<PropsType> = ({ className }) => {
     { title: 'Kontakt', href: 'contact' },
   ]
   return (
-    <nav className={`${scss.navBar} ${className}`}>
+    <nav className={`${scss.navBar} ${className}`} onClick={onHandlerClose}>
       {links.map((link, index) => {
         return (
           <Link to={{ pathname: `hvac/${link.href}`, hash: link.href }} key={index}>

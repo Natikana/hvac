@@ -1,64 +1,63 @@
 @import '@/styles/scss/mixin';
 .homeSection {
-  //width: 100%;
-  /*.home {
-    position: relative;
-    width: 100%;
-    padding: 100px 0;*/
-  .titleBlock {
-    @include display(flex, column, center, flex-start, 10px);
-    padding: 0 50px 100px 50px;
-    /* position: relative;
-    padding: 50px 0;
-    min-height: 500px;
-    height: 100%;
-    z-index: 20;
-    text-align: center;*/
-    .title {
-      @include text(600, 45px, 'Roboto', var(--color-light-100), 137%);
-    }
-    .subTitle {
-      @include text(400, 18px, 'Roboto', var(--color-light-100), 150%);
-    }
-    h5 {
-      @include text(300, 16px, 'Roboto', var(--color-light-100), 150%);
-    }
-    h1,
-    h2,
-    h3,
-    h5 {
-      margin: 0;
+  .homeImg {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../../../access/img/6_6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(80%);
+    background-position: center center;
+    .titleBlock {
+      @include display(flex, column, center, flex-start, 10px);
+      padding: 0 50px 100px 50px;
+
+      .title {
+        @include text(600, 45px, 'Roboto', var(--color-light-100), 137%);
+        @media screen and (max-width: 1090px) {
+          color: var(--color-light-000);
+        }
+      }
+      .subTitle {
+        @include text(400, 18px, 'Roboto', var(--color-light-100), 150%);
+        @media screen and (max-width: 1090px) {
+          color: var(--color-light-000);
+        }
+      }
+      h5 {
+        @include text(300, 16px, 'Roboto', var(--color-light-100), 150%);
+      }
+      h1,
+      h2,
+      h3,
+      h5 {
+        margin: 0;
+        @media screen and (max-width: 1090px) {
+          background-color: var(--color-dark-700);
+        }
+        @media screen and (max-width: 768px) {
+          text-align: center;
+        }
+      }
+      .btn {
+        @include text(400, 16px, 'Roboto', var(--color-light-100), 150%);
+        text-decoration: none;
+        padding: 10px 50px;
+        border: var(--color-dark-100) 2px 2px;
+        border-radius: 2px;
+        background-color: var(--color-dark-100);
+        color: white;
+        margin-top: 15px;
+      }
+
       @media screen and (max-width: 768px) {
-        text-align: center;
+        align-items: center;
       }
     }
-    .btn {
-      /*width: 200px;
-      height: 40px;*/
-      @include text(400, 16px, 'Roboto', var(--color-light-100), 150%);
-      text-decoration: none;
-      padding: 10px 50px;
-      border: var(--color-dark-100) 2px 2px;
-      border-radius: 2px;
-      background-color: var(--color-dark-100);
-      color: white;
-      margin-top: 15px;
-    }
-    @media screen and (max-width: 768px) {
-      align-items: center;
+    @media screen and (max-width: 1090px) {
+      background-image: url('../../../access/img/close-up-ventilation-system.jpg');
     }
   }
-  /*.homeImgBlock {
-    .homeImg {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      object-fit: cover;
-      filter: brightness(50%);
-      margin-top: 130px;
-    }
-  }*/
-  //}
 }

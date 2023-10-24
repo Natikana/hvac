@@ -11,6 +11,7 @@ export const BurgerMenu = () => {
     <section className={scss.burger}>
       <div className={scss.burgerBtn} onClick={handlerOpenBurger}></div>
       <NavBar
+        onHandlerClose={handlerOpenBurger}
         className={openBurgerMenu ? `${scss.burgerMenu} ${scss.show}` : `${scss.burgerMenu}`}
       />
     </section>

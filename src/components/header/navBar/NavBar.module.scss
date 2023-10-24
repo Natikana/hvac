@@ -11,6 +11,9 @@
   a:hover {
     color: var(--color-dark-100);
   }
+  @media screen and (max-width: 1090px) {
+    color: var(--color-light-000);
+  }
   @media screen and (max-width: 950px) {
     gap: 10px;
   }

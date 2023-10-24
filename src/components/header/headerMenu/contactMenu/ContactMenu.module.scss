@@ -12,12 +12,20 @@
     a:hover {
       text-decoration: underline;
     }
+    i {
+      @media screen and (max-width: 1090px) {
+        color: var(--color-light-000);
+      }
+    }
   }
   .text {
     @include text(500, 13px, 'Roboto', var(--color-light-300), unset);
+    @media screen and (max-width: 1090px) {
+      color: var(--color-light-000);
+    }
   }
   .logo {
-    @include text(800, 34px, 'Roboto', var(--color-dark-100), unset);
+    @include text(800, 34px, 'Roboto', var(--color-dark-300), unset);
     padding: 25px 0;
   }
 }
