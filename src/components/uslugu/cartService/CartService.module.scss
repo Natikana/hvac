@@ -4,6 +4,9 @@
   width: 370px;
   flex-shrink: 1;
   margin-bottom: 50px;
+  img {
+    width: 350px;
+  }
   .titleBlock {
     @include display(flex, row, space-around, flex-start, 15px);
     padding: 15px 25px;

@@ -16,15 +16,9 @@
 
       .title {
         @include text(600, 45px, 'Roboto', var(--color-light-100), 137%);
-        @media screen and (max-width: 1090px) {
-          color: var(--color-light-000);
-        }
       }
       .subTitle {
         @include text(400, 18px, 'Roboto', var(--color-light-100), 150%);
-        @media screen and (max-width: 1090px) {
-          color: var(--color-light-000);
-        }
       }
       h5 {
         @include text(300, 16px, 'Roboto', var(--color-light-100), 150%);
@@ -34,12 +28,6 @@
       h3,
       h5 {
         margin: 0;
-        @media screen and (max-width: 1090px) {
-          background-color: var(--color-dark-700);
-        }
-        @media screen and (max-width: 768px) {
-          text-align: center;
-        }
       }
       .btn {
         @include text(400, 16px, 'Roboto', var(--color-light-100), 150%);
@@ -51,13 +39,13 @@
         color: white;
         margin-top: 15px;
       }
-
-      @media screen and (max-width: 768px) {
-        align-items: center;
+      @media screen and (max-width: 1090px) {
+        justify-content: start;
       }
     }
     @media screen and (max-width: 1090px) {
-      background-image: url('../../../access/img/close-up-ventilation-system.jpg');
+      background-image: url('../../../access/img/refer/yellowPare.jpg');
+      padding: 120px 20px 0 20px;
     }
   }
 }

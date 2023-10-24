@@ -14,14 +14,14 @@
     }
     i {
       @media screen and (max-width: 1090px) {
-        color: var(--color-light-000);
+        color: var(--color-dark-300);
       }
     }
   }
   .text {
     @include text(500, 13px, 'Roboto', var(--color-light-300), unset);
     @media screen and (max-width: 1090px) {
-      color: var(--color-light-000);
+      color: var(--color-dark-300);
     }
   }
   .logo {
