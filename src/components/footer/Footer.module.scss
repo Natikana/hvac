@@ -1,0 +1,9 @@
+@import '@/styles/scss/mixin';
+.footer {
+  padding: 20px 0;
+  .footerBlock {
+    .creator {
+      @include text(300, 16px, 'Roboto', var(--color-light-100), unset);
+    }
+  }
+}

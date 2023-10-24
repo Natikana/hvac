@@ -1,0 +1,12 @@
+@import '@/styles/scss/mixin';
+
+.headerMenu {
+  @include display(flex, row, space-between, center, normal);
+  padding: 0 175px;
+  @media screen and (max-width: 1370px) {
+    padding: 0 20px;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

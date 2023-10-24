@@ -1,11 +1,14 @@
 import scss from './NavBar.module.scss'
 import { Link } from 'react-router-dom'
+import { FC } from 'react'
 type LinkType = {
   title: string
   href: string
 }
-
-export const NavBar = () => {
+type PropsType = {
+  className?: string
+}
+export const NavBar: FC<PropsType> = ({ className }) => {
   const links: LinkType[] = [
     { title: 'Home', href: 'home' },
     { title: 'Dlaczego My', href: 'whyWe' },
@@ -15,7 +18,7 @@ export const NavBar = () => {
     { title: 'Kontakt', href: 'contact' },
   ]
   return (
-    <nav className={scss.navBar}>
+    <nav className={`${scss.navBar} ${className}`}>
       {links.map((link, index) => {
         return (
           <Link to={{ pathname: `hvac/${link.href}`, hash: link.href }} key={index}>

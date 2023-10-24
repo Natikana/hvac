@@ -1,0 +1,37 @@
+@import '@/styles/scss/mixin';
+.burger {
+  display: none;
+  height: 100%;
+  .burgerBtn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../../../../../access/img/menu/menu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    right: 10px;
+  }
+  .burgerMenu {
+    @include display(flex, column, center, center, 20px);
+    transform: translate(120%, 0);
+    transition: 2s;
+    width: 320px;
+    height: 100vh;
+    position: absolute;
+    background-color: var(--color-dark-300);
+    top: 0;
+    right: 2px;
+    z-index: 5;
+    a:hover {
+      color: var(--color-light-000);
+    }
+  }
+  .show {
+    transform: translate(6px, 0);
+    transition: 2s;
+  }
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}

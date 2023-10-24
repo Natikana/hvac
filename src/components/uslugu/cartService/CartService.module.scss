@@ -8,12 +8,12 @@
     @include display(flex, row, space-around, flex-start, 15px);
     padding: 15px 25px;
     position: relative;
-    z-index: 3;
+    z-index: 1;
     width: 80%;
     .icon {
       width: 30px;
       height: 30px;
-      z-index: 3;
+      z-index: 1;
     }
     .serviceDescrb {
       @include display(flex, column, center, self-start, 15px);

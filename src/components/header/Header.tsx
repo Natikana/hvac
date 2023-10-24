@@ -1,5 +1,6 @@
+import { HeaderMenu } from '@/components/header/headerMenu/HeaderMenu.tsx'
+import { BurgerMenu } from '@/components/header/navBar/burgerMenu/BurgerMenu.tsx'
 import scss from './Header.module.scss'
-import { NavBar } from '@/components/header/navBar/NavBar.tsx'
 import { useState } from 'react'
 
 export const Header = () => {
@@ -12,29 +13,10 @@ export const Header = () => {
     }
   }
   window.addEventListener('scroll', changeColour)
-
   return (
-    <section className={color ? `${scss.header} ${scss.headerColour}` : scss.header}>
-      <div className={scss.headerBlock}>
-        <div className={scss.contacts}>
-          <h1 className={scss.logo}>logo</h1>
-          <ul>
-            <li className={scss.contact}>
-              <i className="fa fa-phone" />
-              <a href="tel:48 574 107 642" className={scss.text}>
-                (48) 574 107 642
-              </a>
-            </li>
-            <li className={scss.contact}>
-              <i className="fa fa-envelope" />
-              <a href="mailto:janmashkov@gmail.com" className={scss.text}>
-                janmashkov@gmail.com
-              </a>
-            </li>
-          </ul>
-        </div>
-        <NavBar />
-      </div>
-    </section>
+    <div className={color ? `${scss.header} ${scss.headerColour}` : scss.header}>
+      <HeaderMenu />
+      <BurgerMenu />
+    </div>
   )
 }

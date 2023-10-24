@@ -8,6 +8,7 @@ import { Service } from '@/components/uslugu/Service.tsx'
 import { Projects } from '@/components/realizacji/Projects.tsx'
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import { Footer } from '@/components/footer/Footer.tsx'
 export function useScrollToAnchor() {
   const { pathname, hash, key } = useLocation()
   console.log({ pathname, hash })
@@ -46,6 +47,7 @@ export function App() {
     <div className={scss.app}>
       <Header />
       <AllPages />
+      <Footer />
     </div>
   )
 }

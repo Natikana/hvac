@@ -1,40 +1,16 @@
 @import '@/styles/scss/mixin';
-
 .header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 2;
   max-height: 100px;
   transition: background-color 0.4s ease-out;
-  overflow: hidden;
-
-  .headerBlock {
-    @include display(flex, row, space-between, center, normal);
-    padding: 0 175px;
-    .contacts {
-      @include display(flex, row, normal, normal, normal);
-      padding: 0;
-      margin: 0;
-      list-style-type: none;
-      .contact {
-        @include display(flex, row, normal, center, 10px);
-        a {
-          text-decoration: none;
-        }
-        a:hover {
-          text-decoration: underline;
-        }
-      }
-      .text {
-        @include text(500, 13px, 'Roboto', var(--color-light-300), unset);
-      }
-      .logo {
-        @include text(800, 34px, 'Roboto', var(--color-dark-100), unset);
-        padding: 25px 0;
-      }
-    }
+  @media screen and (max-width: 768px) {
+    @include display(flex, row, space-between, center, unset);
+    padding: 0 0 0 20px;
+    height: 50px;
   }
 }
 .headerColour {

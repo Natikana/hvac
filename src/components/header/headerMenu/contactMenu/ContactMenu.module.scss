@@ -1,0 +1,23 @@
+@import '@/styles/scss/mixin';
+.contacts {
+  @include display(flex, row, normal, normal, normal);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  .contact {
+    @include display(flex, row, normal, center, 10px);
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .text {
+    @include text(500, 13px, 'Roboto', var(--color-light-300), unset);
+  }
+  .logo {
+    @include text(800, 34px, 'Roboto', var(--color-dark-100), unset);
+    padding: 25px 0;
+  }
+}

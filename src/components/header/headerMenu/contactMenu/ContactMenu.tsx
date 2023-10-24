@@ -1,9 +1,10 @@
-import scss from './SubHeader.module.scss'
+import scss from './ContactMenu.module.scss'
 
-export const SubHeader = () => {
+export const ContactMenu = () => {
   return (
-    <section className={scss.subHeader}>
-      <ul className={scss.contacts}>
+    <div className={scss.contacts}>
+      <h2 className={scss.logo}>logo</h2>
+      <ul>
         <li className={scss.contact}>
           <i className="fa fa-phone" />
           <a href="tel:48 574 107 642" className={scss.text}>
@@ -17,6 +18,6 @@ export const SubHeader = () => {
           </a>
         </li>
       </ul>
-    </section>
+    </div>
   )
 }
