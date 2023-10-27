@@ -1,11 +1,12 @@
 @import '@/styles/scss/mixin';
 .refer {
   .referBlock {
-    @include display(flex, row, space-between, center, 30px);
-    margin: 50px 0;
+    @include display(flex, row, center, center, 20px);
+    padding: 50px 70px;
+    /*margin: 50px 0;*/
     .swiper {
-      background-color: white;
-      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+      /*background-color: white;
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);*/
     }
   }
   /*@media screen and (max-width: 1079px) {

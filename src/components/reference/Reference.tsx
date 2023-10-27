@@ -9,16 +9,18 @@ import common from '@/styles/common/commonSection.module.scss'
 import scss from './Reference.module.scss'
 import { Title } from '@/styles/common/title/Title.tsx'
 
-import joyPare from '../../../access/img/refer/joyPare.jpg'
-import speakPare from '../../../access/img/refer/speakPare.jpg'
-import coldPare from '../../../access/img/refer/coldPare.jpg'
-import yellowPare from '../../../access/img/refer/yellowPare.jpg'
+import img1_1 from '../../../access/img/referList/iz2.jpg'
+import img2_2 from '../../../access/img/referList/yurij2.jpg'
+import img3_3 from '../../../access/img/referList/klima_2.jpg'
+import img4_4 from '../../../access/img/referList/rados2.jpg'
+import img5_5 from '../../../access/img/referList/5_5.jpg'
 
-import img1 from '../../../access/img/ourWork/1 (1).jpg'
+import img1 from '../../../access/img/referList/iz1.png'
 import { v1 } from 'uuid'
-import img2 from '../../../access/img/service/airCond (2).jpg'
-import img3 from '../../../access/img/ourWork/1 (3).jpg'
-import img4 from '../../../access/img/ourWork/1 (4).jpg'
+import img2 from '../../../access/img/referList/yurij.png'
+import img3 from '../../../access/img/referList/klima.png'
+import img4 from '../../../access/img/referList/rados.png'
+import img5 from '../../../access/img/referList/5.png'
 
 export const Reference = () => {
   const swiperArr: { image: string; id: string }[] = [
@@ -26,12 +28,14 @@ export const Reference = () => {
     { image: img2, id: v1() },
     { image: img3, id: v1() },
     { image: img4, id: v1() },
+    { image: img5, id: v1() },
   ]
   const swiperArrPeople: { image: string; id: string }[] = [
-    { image: joyPare, id: v1() },
-    { image: speakPare, id: v1() },
-    { image: coldPare, id: v1() },
-    { image: yellowPare, id: v1() },
+    { image: img1_1, id: v1() },
+    { image: img2_2, id: v1() },
+    { image: img3_3, id: v1() },
+    { image: img4_4, id: v1() },
+    { image: img5_5, id: v1() },
   ]
   //const [noneDisplay, setNoneDisplay] = useState(false)
   return (
@@ -51,7 +55,7 @@ export const Reference = () => {
           navigation={false}
           modules={[Navigation, Autoplay]}
           speed={800}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
           breakpoints={{
             320: {
               slidesPerView: 1,
@@ -87,7 +91,7 @@ export const Reference = () => {
           navigation={false}
           modules={[Navigation, Autoplay]}
           speed={800}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
           breakpoints={{
             320: {
               slidesPerView: 1,
