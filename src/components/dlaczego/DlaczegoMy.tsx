@@ -11,15 +11,7 @@ export const DlaczegoMy = () => {
     <section id={'whyWe'} className={` ${common.section} ${scss.choice} `}>
       <Title
         title={'Dlaczego ARTiK?'}
-        subTitle={[
-          <>
-            Jesteśmy ekspertami w dziedzinie klimatyzacji, pomp ciepła i wentylacji.
-            {/* <p>Nasza firma oferuje kompleksowe rozwiązania, które sprawią,</p>
-            <p>
-              że Twój dom lub firma będą zawsze komfortowe, niezależnie od warunków atmosferycznych.
-            </p>*/}
-          </>,
-        ]}
+        subTitle={[<>Jesteśmy ekspertami w dziedzinie klimatyzacji, pomp ciepła i wentylacji.</>]}
       />
       <div className={scss.choiceBlock}>
         <Cart

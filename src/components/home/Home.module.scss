@@ -12,7 +12,7 @@
     background-position: center center;
     .titleBlock {
       @include display(flex, column, center, flex-start, 10px);
-      padding: 0 50px 100px 50px;
+      padding: 50px 50px 100px 50px;
 
       .title {
         @include text(600, 45px, 'Roboto', var(--color-light-100), 137%);
@@ -23,12 +23,7 @@
       h5 {
         @include text(300, 16px, 'Roboto', var(--color-light-100), 150%);
       }
-      h1,
-      h2,
-      h3,
-      h5 {
-        margin: 0;
-      }
+
       .btn {
         @include text(400, 16px, 'Roboto', var(--color-light-100), 150%);
         text-decoration: none;

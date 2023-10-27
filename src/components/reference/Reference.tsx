@@ -1,10 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/scss'
 import 'swiper/scss/navigation'
-//import SwiperCore, { Autoplay } from 'swiper'
-//import { Autoplay } from 'swiper'
-
 import { Navigation, Autoplay } from 'swiper/modules'
+
 import common from '@/styles/common/commonSection.module.scss'
 import scss from './Reference.module.scss'
 import { Title } from '@/styles/common/title/Title.tsx'
@@ -16,12 +14,11 @@ import img4_4 from '../../../access/img/referList/rados2.jpg'
 import img5_5 from '../../../access/img/referList/5_5.jpg'
 
 import img1 from '../../../access/img/referList/iz1.png'
-import { v1 } from 'uuid'
 import img2 from '../../../access/img/referList/yurij.png'
 import img3 from '../../../access/img/referList/klima.png'
 import img4 from '../../../access/img/referList/rados.png'
 import img5 from '../../../access/img/referList/5.png'
-
+import { v1 } from 'uuid'
 export const Reference = () => {
   const swiperArr: { image: string; id: string }[] = [
     { image: img1, id: v1() },
@@ -37,7 +34,7 @@ export const Reference = () => {
     { image: img4_4, id: v1() },
     { image: img5_5, id: v1() },
   ]
-  //const [noneDisplay, setNoneDisplay] = useState(false)
+
   return (
     <section id={'reference'} className={` ${common.section} ${scss.refer} `}>
       <Title
@@ -70,7 +67,7 @@ export const Reference = () => {
         >
           {swiperArr.map(el => {
             return (
-              <SwiperSlide key={el.id}>
+              <SwiperSlide key={el.id} className={scss.center}>
                 <img
                   src={el.image}
                   loading="lazy"
@@ -85,7 +82,7 @@ export const Reference = () => {
         </Swiper>
 
         <Swiper
-          className={`${scss.swiper}`}
+          className={`${scss.swiper2}`}
           slidesPerView={1}
           autoHeight={false}
           navigation={false}

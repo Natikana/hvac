@@ -1,13 +1,14 @@
 @import '@/styles/scss/mixin';
 
 .titleBlock {
+  margin-bottom: 50px;
   .title {
     @include text(
       var(--font-weight-light),
       var(--font-size-xxl),
       'Roboto',
       var(--color-light-300),
-      unset
+      150%
     );
     text-align: center;
     padding: 0 0 30px 0;
@@ -26,11 +27,8 @@
       var(--font-size-xl),
       'Roboto',
       var(--color-light-300),
-      unset
+      150%
     );
     text-align: center;
-  }
-  p {
-    margin-top: 10px;
   }
 }

@@ -3,8 +3,6 @@
   background-color: var(--color-light-500);
   .contactBlock {
     @include display(flex, row, space-between, center, 60px);
-
-    margin: 50px 0 0 0;
     .contactDate {
       @include display(flex, column, unset, self-start, 10px);
       h3 {
@@ -12,12 +10,9 @@
       }
       .contacts {
         @include display(flex, column, unset, unset, 15px);
-
         padding: 0;
         .contact {
           @include display(flex, row, start, center, 20px);
-          padding: 0;
-          margin: 0;
           list-style-type: none;
           a {
             text-decoration: none;
@@ -27,16 +22,18 @@
           }
         }
         .text {
-          @include text(400, 16px, 'Roboto', var(--color-light-300), 24px);
+          @include text(400, 16px, 'Roboto', var(--color-light-300), 130%);
         }
       }
       span {
-        @include text(400, 16px, 'Roboto', var(--color-dark-100), 24px);
+        @include text(400, 16px, 'Roboto', var(--color-dark-100), 130%);
+      }
+      @media screen and (max-width: 1079px) {
+        align-items: center;
       }
     }
     @media screen and (max-width: 1079px) {
       flex-wrap: wrap;
-
       iframe {
         width: 100%;
       }

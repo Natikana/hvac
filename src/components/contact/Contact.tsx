@@ -28,7 +28,12 @@ export const Contact = () => {
           />
           <div className={scss.contactDate}>
             <h3>ARTiK Yauheni Mashkouski</h3>
+
             <ul className={scss.contacts}>
+              <span>
+                Niech <b>Twój komfort</b> nie zależy od warunków pogodowych. Wybierz <b>ARTiK</b> i
+                ciesz się doskonałym klimatem przez cały rok!
+              </span>
               <li className={scss.contact}>
                 <i className="fa fa-phone" />
                 <a href="tel:48 574 107 642" className={scss.text}>
@@ -54,10 +59,6 @@ export const Contact = () => {
                 <span className={scss.text}>NIP: 5242878677</span>
               </li>
             </ul>
-            <span>
-              Niech <b>Twój komfort</b> nie zależy od warunków pogodowych. Wybierz <b>ARTiK</b> i
-              ciesz się doskonałym klimatem przez cały rok!
-            </span>
           </div>
         </div>
       </div>
