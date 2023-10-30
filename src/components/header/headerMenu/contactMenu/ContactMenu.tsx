@@ -1,9 +1,10 @@
 import scss from './ContactMenu.module.scss'
+import logo1 from '../../../../../access/img/menu/logo1.png'
 
 export const ContactMenu = () => {
   return (
     <div className={scss.contacts}>
-      <h2 className={scss.logo}>logo</h2>
+      <img src={logo1} className={scss.logo} alt={'logo'} />
       <ul>
         <li className={scss.contact}>
           <i className="fa fa-phone" />
