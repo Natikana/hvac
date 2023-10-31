@@ -84,7 +84,7 @@ export const Carousel = () => {
         {swiperArr.map(el => {
           return (
             <SwiperSlide className={scss.swiperSlide} key={el.id}>
-              <img src={el.image} loading="lazy" className={scss.swiperImg} alt={'project'} />
+              <img srcSet={el.image} loading="lazy" className={scss.swiperImg} alt={'project'} />
               <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>
           )

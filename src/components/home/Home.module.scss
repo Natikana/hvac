@@ -10,6 +10,9 @@
     background-attachment: fixed;
     filter: brightness(80%);
     background-position: center center;
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../../access/img/6_6@2x.png');
+    }
     .titleBlock {
       @include display(flex, column, center, flex-start, 10px);
       padding: 50px 50px 100px 50px;
