@@ -10,12 +10,6 @@
     background-attachment: fixed;
     filter: brightness(80%);
     background-position: center center;
-    /* @media (min-resolution: 2dppx) {
-      background-image: url('../../../access/img/vecterImg/colorVector/6_62x (1).svg');
-    }
-    @media (min-resolution: 3dppx) {
-      background-image: url('../../../access/img/vecterImg/colorVector/6_62x (1).svg');
-    }*/
     .titleBlock {
       @include display(flex, column, center, flex-start, 10px);
       padding: 50px 50px 100px 50px;
@@ -54,9 +48,8 @@
       only screen and (min-device-pixel-ratio: 2),
       only screen and (min-resolution: 192dpi),
       only screen and (min-resolution: 2dppx) {
-      background: url('../../../access/img/refer/yellowPare-tinified.jpg') no-repeat center center /
-        420px 280px;
-      padding: 120px 20px 0 20px;
+      background-image: url('../../../access/img/refer/yellowPare-tinified.jpg');
+      padding: 200px 20px 0 20px;
     }
   }
 }
