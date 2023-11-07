@@ -9,6 +9,7 @@ import { Projects } from '@/components/realizacji/Projects.tsx'
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import { Footer } from '@/components/footer/Footer.tsx'
+import { Helmet } from 'react-helmet'
 export function useScrollToAnchor() {
   const { pathname, hash, key } = useLocation()
   console.log({ pathname, hash })
@@ -44,10 +45,16 @@ export const AllPages = () => {
 export function App() {
   useScrollToAnchor()
   return (
-    <div className={scss.app}>
-      <Header />
-      <AllPages />
-      <Footer />
-    </div>
+    <>
+      <Helmet>
+        <meta name="description" content="ARTiK page" />
+        <title>ARTiK</title>
+      </Helmet>
+      <div className={scss.app}>
+        <Header />
+        <AllPages />
+        <Footer />
+      </div>
+    </>
   )
 }
