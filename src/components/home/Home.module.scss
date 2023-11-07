@@ -4,14 +4,17 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-image: url('../../../access/img/6_6 (1).png');
+    background-image: url('../../../access/img/6_6@2x.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: brightness(80%);
     background-position: center center;
     @media (min-resolution: 2dppx) {
-      background-image: url('../../../access/img/6_6@2x.png');
+      background-image: url('../../../access/img/vecterImg/colorVector/6_62x (1).svg');
+    }
+    @media (min-resolution: 3dppx) {
+      background-image: url('../../../access/img/vecterImg/colorVector/6_62x (1).svg');
     }
     .titleBlock {
       @include display(flex, column, center, flex-start, 10px);
