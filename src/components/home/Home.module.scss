@@ -48,5 +48,15 @@
       background-image: url('../../../access/img/refer/yellowPare-tinified.jpg');
       padding: 120px 20px 0 20px;
     }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background: url('../../../access/img/refer/yellowPare-tinified.jpg') no-repeat center center /
+        420px 280px;
+      padding: 120px 20px 0 20px;
+    }
   }
 }
